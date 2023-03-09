@@ -1,0 +1,29 @@
+spring:
+  data:
+    jdbc:
+      repositories:
+        enabled: true
+  datasource:
+    schema:
+      url: jdbc:mysql://localhost:3306/INFORMATION_SCHEMA
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: YSFwal14.
+    data:
+      url: jdbc:mysql://localhost:3306/db_temp
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: YSFwal14.
+logging:
+  level:
+    com.ermao.dm: debug
+    root: info
+    org:
+      springframework:
+        jdbc:
+          core:
+            JdbcTemplate: DEBUG
+            StatementCreatorUtils: debug
+        data:
+          jdbc:
+            core: debug
